@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+.promo-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    color: white;
+    background-color: black;
+    /* padding:12px; */
+    width: 1440px;
+    height:38px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.promo-container p {
+    text-align: center;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* margin: 0 auto; */
+}
+.promo-container p span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.promo-container img {
+    position: absolute;
+    right: 180px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+.logo {
+    font-size: 32px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #F0F0F0;
+    border-radius: 62px;
+    padding: 12px 16px;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    width: 400px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.search-bar input::placeholder {
+    color: #807D7E;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.page-1 {
+    background: url('/assets/background.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    justify-content: flex-start; 
+
+}
+
+.page-1-content{
+    max-width: 600px;
+    height: 663px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    padding-left:180px;
+    position: absolute;
+    
+    
+}
+
+.page-1 h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.page-1 p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.shop-now {
+    background: black;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 62px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    align-self: flex-start;
+}
+
+.stats {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    width: 100%; 
+    margin-top: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.stat {
+    text-align: start;
+}
+
+.stat h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 14px;
+    color: #666;
+}
+
+.shops{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    color: white;
+    background-color: black;
+    /* padding:20px; */
+    width: 1440px;
+    gap: 80px;
+    height:122px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+
+.calvin{
+    /* position: relative; */
+    align-self:flex-start;
+    padding-top: 5px;
+    /* width: 100%; */
+    
+
+}
+.versace{
+    /* position: relative; */
+    align-self: flex-start;
+    padding-top: 5px;
+}
+.three-shops{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 106px;
+    padding-top:5px ;
+
+}
+.new-arrivals {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 70px 80px;
+}
+
+.new-arrivals h2 {
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Centers the entire product card */
+    text-align: start;
+    width: 280px; /* Adjust width as needed */
+}
+
+.product-card {
+    background: #F0F0F0;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+
+}
+
+
+
+.product-card img {
+    width: 100%;
+    /* height: auto; */
+    display: block;
+    margin-bottom: 16px;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.product-content {
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.product-card h3 {
+    
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.rating {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.rating img {
+    width: 20px;
+    height: 20px;
+}
+
+.price-container {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+}
+
+.current-price {
+    font-weight: 700;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.original-price {
+    color: #777;
+    text-decoration: line-through;
+
+}
+
+.discount {
+    color: red;
+}
+.stars {
+    color:#FFC633;
+}
+
+@media (max-width: 390px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .new-arrivals {
+        padding: 40px 20px;
+    }
+}
+
+.dress-stylers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: #F0F0F0;
+    max-width: 1200px; /* Adjust width to match content */
+    border-radius: 40px;
+    width: 100%;
+    padding: 40px; /* Add padding for better spacing */
+    margin: 0 auto; /* Centers the section */
+}
+
+.dress-stylers h2{
+    font-family: 'Alfa Slab One', cursive; 
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+.dress-stylers-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.casual-formal, .party-gym {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    padding: 50px 20px;
+    gap: 50px;
+    
+}
+
+.testimonials h2 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    align-self: self-start;
+    margin-left: 100px;
+}
+
+.testimonial-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* max-width: 1100px; */
+}
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    /* width: 400px; */
+    /* height: 240px; */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    border: 1px solid rgba(0, 0, 0, 0.088);
+    transition: transform 0.3s;
+    width: 100%;
+    /* height: auto; */
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 16px;
+    width: 400px;
+    height: 240px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    align-self: start;
+    
+    
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.testimonial-card p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+
+.testimonial-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+    margin-top: 20px;
+    align-self: flex-end;
+    margin-right: 80px;
+}
+
+.testimonial-nav button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+    align-self: self-end;
+    margin: 100px;
+}
+
+.testimonial-nav button:hover {
+    color: #333;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000; /* Black background */
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 900px; /* Ensures it doesn’t stretch too wide */
+    margin: 40px auto; /* Centers the section */
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+}
+
+.newsletter-form button {
+    padding: 12px 20px;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: #ddd;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #F5F5F5; /* Light gray background */
+    padding: 40px 60px; /* Space inside footer */
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.footer .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer .column h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer .column a {
+    text-decoration: none;
+    color: #333; /* Dark text */
+    transition: color 0.3s ease;
+}
+
+.footer .column a:hover {
+    color: #000; /* Slightly darker hover effect */
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer .social-icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+
+
+
+/* Hide burger menu on desktop */
+.navbar > img {
+    display: none;
+}
