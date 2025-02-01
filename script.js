@@ -1,20 +1,20 @@
-// Select the container
-const productsContainer = document.getElementById('productsContainer');
 
-// Fetch products from API
+const productsContainer = document.getElementById('productsContainer');
+const searchInput = document.getElementById('searchInput');
+
+
 async function fetchProducts() {
     try {
         const response = await fetch('https://fakestoreapi.com/products');
         const products = await response.json();
-        // Limit to 8 products
-        return products.slice(0, 8);
+        return products.slice(0, 8); 
     } catch (error) {
         console.error('Error fetching products:', error);
         return [];
     }
 }
 
-// Create star rating HTML
+
 function createStarRating(rating) {
     const fullStars = Math.floor(rating);
     const hasHalfStar = rating % 1 !== 0;
@@ -26,7 +26,7 @@ function createStarRating(rating) {
     return starsHTML;
 }
 
-// Function to display products
+
 function displayProducts(products) {
     productsContainer.innerHTML = products.map(product => {
         const originalPrice = Math.round(product.price * 1.2); 
@@ -54,10 +54,18 @@ function displayProducts(products) {
     }).join('');
 }
 
-// Initialize
+
 async function initialize() {
-    const products = await fetchProducts();
-    displayProducts(products);
+    const limitedProducts = await fetchProducts(); 
+    displayProducts(limitedProducts); 
+
+    searchInput.addEventListener("input", () => {
+        const searchValue = searchInput.value.toLowerCase();
+        const filteredProducts = limitedProducts.filter(product =>
+            product.title.toLowerCase().includes(searchValue)
+        );
+        displayProducts(filteredProducts);
+    });
 }
 
 initialize();
