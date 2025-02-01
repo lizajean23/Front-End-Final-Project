@@ -730,10 +730,11 @@ footer
 @media (max-width: 400px) {
     .promo-container{
         width: 100%;
-        padding: 0 20px; 
+        /* padding: 0 20px;  */
     }
     .promo-container p {
-        margin: 0;  
+        margin: 0;
+        padding: 0;  
     }
     .promo-container img {
         right: 20px; 
@@ -754,6 +755,7 @@ footer
     /* Show the logo */
     .logo {
         display: block;
+
     }
 
     /* Show burger menu */
@@ -781,6 +783,7 @@ footer
         padding: 0;
         margin: 0;
         overflow: hidden;
+        background-color: #F2F0F1;
     }
 
     .page-1-content {
@@ -793,39 +796,188 @@ footer
     .page-1 h1 {
         font-size: 36px;
         text-align: start;
-        padding: 5px;
+        padding: 20px;
     }
 
     .page-1 p {
         font-size: 14px;
         text-align: start;
+        padding-left: 20px;
     }
 
     .shop-now {
         align-self: center;
         width: 100%;
-        max-width: 300px;
+        max-width: 358px;
         text-align: center;
     }
 
     .stats {
+        display: flex;
         flex-direction: row;
-        gap: 20px;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 10px;
+        flex-wrap: wrap; /* Allow wrapping */
+        gap: 40px; /* Consistent spacing between items */
+        align-items: flex-start;
+        justify-content: center; 
+        width: 100%; 
+        margin-bottom: 100px;
         
     }
-
+    
+    /* Individual stat items */
     .stat {
-        text-align: center;
-        padding-right: 0;
+        text-align: center; /* Center text */
+        width: 106px; /* Fixed width */
+        height: 150px; /* Fixed height for consistent alignment */
+        box-sizing: border-box; /* Ensure padding doesn’t affect dimensions */
+    }   
+    .stat h2 {
+        font-size: 24px; /* Adjust font size for the number */
+        font-weight: bold; /* Optional: Make numbers bold */
     }
-
+    
+    .stat p {
+        font-size: 14px; /* Adjust font size for the description */
+        color: #666; /* Optional: Adjust text color */
+        margin: 0; /* Remove default margin */
+        text-align: start; 
+    }
+    
+    
+    /* Remove unnecessary separator rule */
     .stat:not(:last-child)::after {
         display: none;
     }
+
+    .shops{
+        flex-wrap: wrap;
+        gap: 5px;
+        
+    }
+    .calvin{
+        width: 110px;
+        height:auto;
+        flex-direction: row;
+    }
+
+    .three-shops img {
+        width: 110px;
+        height:auto;
+        flex-direction: row;
+        gap: 5px;
+        flex-wrap:wrap;
+
+    }
+    .versace{
+        width: 110px;
+        height:auto;
+    }
+    .dress-stylers{
+        flex-direction: column
+    }
+
+    .dress-stylers-content{
+    flex-direction: column;
+    }
+
+
+
+
+
+
+    .dress-stylers {
+        width: 360px;
+        padding: 20px; /* Smaller padding for mobile */
+        gap: 20px; /* Adjust the gap between items */
+    }
+
+    .dress-stylers h2 {
+        font-size: 32px; /* Smaller font size for the heading */
+        margin-bottom: 30px;
+    }
+
+    .dress-stylers-content {
+        flex-direction: column; /* Stack content vertically */
+        gap: 20px;
+    }
+
+    .casual-formal, .party-gym {
+        flex-direction: column; /* Stack rows vertically */
+        gap: 20px; /* Space between items */
+        align-items: center;
+        width: 100%; /* Center items */
+    }
+
+    .casual-formal div, .party-gym div {
+        width: 100%; /* Make items fill available width */
+        max-width: 300px; /* Set a max width for consistent sizing */
+    }
+
+
+    .newsletter{
+        flex-direction: column;
+        width: 300px;
+        height:auto;
+        margin-right: 10px;
+        border-radius:20px;
+    }
+
+
+
+    .testimonials {
+        padding: 20px 10px;
+        gap: 30px;
+    }
+
+    .testimonials h2 {
+        font-size: 32px; /* Smaller font size for heading */
+        margin-left: 0; /* Center align the heading */
+        text-align: center;
+    }
+
+    .testimonial-container {
+        flex-direction: column; /* Stack testimonials vertically */
+        gap: 20px;
+        max-width: 100%; /* Take full width for smaller screens */
+    }
+
+    .testimonial-card {
+        width: 90%; /* Shrink card width */
+        height: auto; /* Allow card height to adjust */
+        margin: 0 auto; /* Center the card */
+        padding: 20px; /* Ensure proper spacing inside the card */
+        text-align: center; /* Center align the card content */
+    }
+
+    .testimonial-nav {
+        display: flex;
+        justify-content: center; /* Center navigation buttons */
+        gap: 20px; /* Space between buttons */
+        width: auto; /* Shrink to fit content */
+        margin-right: 0; /* Remove margin for alignment */
+    }
+
+    .testimonial-nav button {
+        font-size: 18px; /* Adjust button size */
+        margin: 0; /* Reset margin for centering */
+    }
+
+
+    .footer{
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .footer .column {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        min-width: 150px;
+    }
+
+    
 
 
 
