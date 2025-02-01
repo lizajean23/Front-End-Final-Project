@@ -15,6 +15,7 @@
 
 
     <header>
+        
         <nav class="navbar">
             <div class="logo">SHOP.CO</div>
             <div class="nav-links">
@@ -31,12 +32,15 @@
                 <img src="assets/cart.png" alt="">
                 <img src="assets/user.png" alt="">
             </div>
-            <img src="assets/burger.png" alt="">
+            <img class="burger-menu" src="assets/burger.png" alt="">
         </nav>
     </header>
 
 
     <section class="page-1">
+
+        <img src="/assets/star.png" alt="Stars" class="star">
+        <img src="/assets/bigstar.png" alt="Star" class="bigstar">
         <div class="page-1-content">
             <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
             <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
@@ -131,12 +135,26 @@
     <section class="newsletter">
         <h2>Stay Up To Date About Our Latest Offers</h2>
         <form class="newsletter-form">
-            <input type="email" placeholder="Enter your email address" required>
+            <div class="input-container">
+                <img class="mail-icon" src="./assets/notif.png" alt="Mail Icon">
+                <input type="email" placeholder="Your email address" required>
+            </div>
             <button type="submit">Subscribe to Newsletter</button>
         </form>
     </section>
+    
 
     <footer class="footer">
+        <!-- Logo and description section -->
+        <div class="footer-left">
+            <h3 class="logo">SHOP.CO</h3>
+            <p class="description">We have clothes that suits your style and which you're proud to wear. From women to men.</p>
+            <div class="social-icons">
+                <img src="assets/Social.png" alt="">
+            </div>
+        </div>
+    
+        <!-- Existing columns -->
         <div class="column">
             <h4>COMPANY</h4>
             <a href="#">About</a>
@@ -165,8 +183,15 @@
             <a href="#">How to - Blog</a>
             <a href="#">Youtube Playlist</a>
         </div>
-    </footer>
     
+        <!-- Bottom section with copyright and payment methods -->
+        <div class="footer-bottom">
+            <p class="copyright">Shop.co © 2000-2023. All Rights Reserved</p>
+            <div class="payment-methods">
+                <img src="./assets/cards.png" alt="">
+            </div>
+        </div>
+    </footer>
     
 
 

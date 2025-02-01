@@ -29,7 +29,7 @@ function createStarRating(rating) {
 // Function to display products
 function displayProducts(products) {
     productsContainer.innerHTML = products.map(product => {
-        const originalPrice = Math.round(product.price * 1.2); // Adding 20% for original price
+        const originalPrice = Math.round(product.price * 1.2); 
         const discount = '-20%';
         
         return `
