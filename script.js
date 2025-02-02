@@ -68,33 +68,4 @@ async function initialize() {
     });
 }
 
-const testimonials = document.querySelectorAll(".testimonial-card");
-const prevButton = document.querySelector(".prev");
-const nextButton = document.querySelector(".next");
-let currentIndex = 0;
-
-function updateTestimonials() {
-    testimonials.forEach((card, index) => {
-        if (index === currentIndex) {
-            card.classList.add("active");
-        } else {
-            card.classList.remove("active");
-        }
-    });
-}
-
-// Event listeners for navigation buttons
-prevButton.addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
-    updateTestimonials();
-});
-
-nextButton.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % testimonials.length;
-    updateTestimonials();
-});
-
-// Initialize the first testimonial as active
-updateTestimonials();
-
 initialize();
