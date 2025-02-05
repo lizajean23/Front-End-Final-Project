@@ -18,11 +18,10 @@ async function fetchProducts() {
 function createStarRating(rating) {
     const fullStars = Math.floor(rating);
     const hasHalfStar = rating % 1 !== 0;
-    let starsHTML = '★'.repeat(fullStars);
+    let starsHTML = '<img src="assets/rating-star.svg" alt="star"/>'.repeat(fullStars);
     if (hasHalfStar) {
-        starsHTML += '½';
+        starsHTML += '<img src="assets/rating-star-half.svg" alt="half-star"/>';
     }
-    starsHTML += '☆'.repeat(5 - Math.ceil(rating));
     return starsHTML;
 }
 
@@ -40,8 +39,8 @@ function displayProducts(products) {
                 <div class="product-content">
                     <h3>${product.title}</h3>
                     <div class="rating">
-                        <div class="stars">${createStarRating(product.rating.rate)}</div>
-                        <span class="rating-number">${product.rating.rate}/5</span>
+                        <div class="product-stars">${createStarRating(product.rating.rate)}</div>
+                        <span class="rating-number">${product.rating.rate}<span class="rating-number-finish">/5</span></span>
                     </div>
                     <div class="price-container">
                         <span class="current-price">$${product.price}</span>
@@ -67,5 +66,34 @@ async function initialize() {
         displayProducts(filteredProducts);
     });
 }
+
+const testimonials = document.querySelectorAll(".testimonial-card");
+const prevButton = document.querySelector(".prev");
+const nextButton = document.querySelector(".next");
+let currentIndex = 0;
+
+function updateTestimonials() {
+    testimonials.forEach((card, index) => {
+        if (index === currentIndex) {
+            card.classList.add("active");
+        } else {
+            card.classList.remove("active");
+        }
+    });
+}
+
+
+prevButton.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+    updateTestimonials();
+});
+
+nextButton.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % testimonials.length;
+    updateTestimonials();
+});
+
+
+updateTestimonials();
 
 initialize();

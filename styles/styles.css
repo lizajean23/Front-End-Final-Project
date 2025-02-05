@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular');
+@import url('https://fonts.cdnfonts.com/css/satoshi');
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Satoshi', sans-serif;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Satoshi', sans-serif;
+}
+
+::placeholder {
+    color: #00000058;
+    font-family: 'Satoshi', sans-serif;
+}
 
 .promo-container {
     display: flex;
@@ -9,19 +25,16 @@
     position: relative;
     color: white;
     background-color: black;
-    /* padding:12px; */
     width: 1440px;
-    height:38px;
     width: 100%;
-    margin: 0 auto;
+    padding: 14px;
 }
 
 
 .promo-container p {
     text-align: center;
-    font-size: 14px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /* margin: 0 auto; */
+    font-size: 1rem;
+    font-weight: 300;
 }
 .promo-container p span {
     text-decoration: underline;
@@ -34,8 +47,6 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    width: 20px;
-    height: 20px;
 }
 .navbar {
     display: flex;
@@ -95,22 +106,19 @@
 .page-1 {
     background: url('/assets/background.png') no-repeat center center/cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh; 
-    justify-content: flex-start; 
     position: relative; 
+    align-items: start;
 }
 
 .page-1-content {
-    max-width: 600px;
-    height: 663px;
+    max-width: 800px;
     display: flex;
     flex-direction: column; 
     align-items: center;
     justify-content: center; 
     padding-left: 180px;
-    position: absolute;
+    padding-top: 5rem;
 }
 
 .page-1 h1 {
@@ -126,18 +134,16 @@
     color: #666;
     margin-bottom: 20px;
     line-height: 1.5; 
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .shop-now {
     background: black;
     color: white;
     border: none;
-    padding: 15px 30px;
+    padding: 15px 70px;
     border-radius: 62px;
-    margin-top: 20px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 300;
     font-size: 16px;
     align-self: flex-start;
 }
@@ -148,7 +154,6 @@
     justify-content: space-between;
     width: 100%; 
     margin-top: 40px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .stat {
@@ -183,15 +188,15 @@
 .bigstar {
     position: absolute;
     width: 104px;
-    top: 100px;
-    left: 1300px;
+    top: 10%;
+    left: 90%;
     height: auto;
 }
 
 .star {
     position: absolute;
-    top: 400px;
-    left:750px;
+    top: 30%;
+    left: 50%;
     width: 56px;
     height: auto;
 }
@@ -236,8 +241,12 @@
 }
 .new-arrivals {
     max-width: 1440px;
-    margin: 0 auto;
     padding: 70px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 0 auto;
 }
 
 .new-arrivals h2 {
@@ -245,24 +254,23 @@
     font-weight: 400;
     font-size: 48px;
     text-align: center;
-    margin-bottom: 55px;
 }
 
 .products-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
     justify-content: center;
-    gap: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 100%;
+    max-width: 1440px;
 }
 
 .product {
     display: flex;
     flex-direction: column;
     align-items: start; 
-    text-align: start;
     width: 280px;
+    gap: 1rem;
 }
 
 .product-card {
@@ -273,8 +281,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
 
 }
 
@@ -293,22 +299,27 @@
 
 .product-content {
     background-color: white;
-    padding: 10px;
     width: 100%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
-.product-card h3 {
-    
-    font-size: 16px;
-    margin-bottom: 8px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+.product-content h3 {
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .rating {
     display: flex;
-    gap: 4px;
-    margin-bottom: 8px;
+    gap: 6px;
+    align-items: center;
+}
+.rating-number {
+    font-size: 14px;
+}
+.rating-number-finish {
+    color: #777;    
 }
 
 .rating img {
@@ -325,29 +336,38 @@
 
 .current-price {
     font-weight: 700;
-    font-size: 25px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    font-size: 24px;
 }
 
 .original-price {
     color: #777;
     text-decoration: line-through;
-
+    font-weight: 700;
+    font-size: 24px;
 }
 
 .discount {
     color: red;
+    padding: 6px 14px;
+    background-color: #FF33331A;
+    border-radius: 16px;
+    font-size: 12px;
 }
+
 .stars {
     color:#FFC633;
+}
+.product-stars {
+    color: #FFC633;
+    display: flex;
+    gap: 4px;
 }
 
 
 
 .dress-stylers {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -359,15 +379,13 @@
     margin: 0 auto; 
 }
 
-.dress-stylers h2{
-    font-family: 'Alfa Slab One', cursive; 
+.dress-stylers strong {
+    font-family: "Integral CF Regular", cursive; 
     font-weight: 700;
     font-size: 48px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    align-self: self-start
+    padding: 2rem 4rem;
+}   
 
-}
 .dress-stylers-content {
     display: flex;
     flex-direction: column;
@@ -387,60 +405,42 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* text-align: center; */
-    padding: 50px 20px;
-    gap: 50px;
-    
+    padding-block: 50px;
+    gap: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
-.testimonials h2 {
+.testimonials strong {
     font-size: 48px;
     font-weight: 700;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: "Integral CF Regular", cursive;
     text-transform: uppercase;
-    margin-bottom: 30px;
     align-self: self-start;
-    margin-left: 100px;
 }
 
 .testimonial-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 40px;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1440px;
-    /* max-width: 1100px; */
 }
 
 .testimonial-card {
     background: #fff;
     border-radius: 15px;
-    padding: 20px;
-    /* width: 400px; */
-    /* height: 240px; */
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    padding: 28px 32px;
     border: 1px solid rgba(0, 0, 0, 0.088);
     transition: transform 0.3s;
     width: 100%;
-    /* height: auto; */
-    /* display: block; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-bottom: 16px;
-    width: 380px;
-    height: 240px;
-    object-fit: contain;
-    mix-blend-mode: multiply;
-    align-self: start;
-    
-    
+    gap: 16px;
 }
 
 .testimonial-card h3 {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 10px;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -458,9 +458,7 @@
     display: flex;
     justify-content: space-between;
     width: 70px;
-    margin-top: 20px;
     align-self: flex-end;
-    margin-right: 80px;
 }
 
 .testimonial-nav button {
@@ -477,27 +475,24 @@
     color: #333;
 }
 
-/*  */
 .newsletter {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
     background: #000;
     color: #fff;
-    padding: 40px;
+    padding: 40px 70px;
     border-radius: 20px;
     width: 83%;
     max-width: 1440px;
     margin: 20px auto;
 }
 
-.newsletter h2 {
+.newsletter strong {
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 20px;
-    font-style: bold;
-    font-family: integral Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: "Integral CF Regular", cursive;
+    max-width: 600px;
 }
 
 .newsletter-form {
@@ -567,12 +562,15 @@ footer
 .footer-left {
     flex: 1 1 300px;
     margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 
 .footer-left .logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 15px;
+    font-size: 34px;
+    font-weight: 700;
+    font-family: "Integral CF Regular", cursive;
 }
 
 .footer-left .description {
@@ -605,12 +603,29 @@ footer
 }
 
 .social-icons {
-    margin-top: 20px;
+    display: flex;
+    gap: 16px;
 }
 
-.social-icons img {
+.social-icons .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
     cursor: pointer;
 }
+.icon.light {
+    border: 1px solid #00000033;
+    background-color: #fff;
+}
+
+.icon.dark {
+    background-color: #000;
+    border: 1px solid #000;
+}
+
 
 .footer-bottom {
     width: 100%;
@@ -752,20 +767,21 @@ footer
         justify-content: space-between;
     }
 
- 
+    
     .logo {
         display: block;
 
     }
 
+    
     .burger-menu {
         display: block;
         cursor: pointer;
-        width: 30px; 
+        width: 30px;  
         height: 25px;
     }
 
-    
+   
     .burger-menu img {
         width: 100%;
         height: 100%;
@@ -814,7 +830,7 @@ footer
     .stats {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         gap: 40px; 
         align-items: flex-start;
         justify-content: center; 
@@ -826,9 +842,9 @@ footer
    
     .stat {
         text-align: center; 
-        width: 106px;
+        width: 106px; 
         height: 150px; 
-        box-sizing: border-box;
+        box-sizing: border-box; 
     }   
     .stat h2 {
         font-size: 24px; 
@@ -841,6 +857,7 @@ footer
         margin: 0; 
         text-align: start; 
     }
+    
     
     
     .stat:not(:last-child)::after {
@@ -890,24 +907,24 @@ footer
     }
 
     .dress-stylers h2 {
-        font-size: 32px; 
+        font-size: 32px;
         margin-bottom: 30px;
     }
 
     .dress-stylers-content {
-        flex-direction: column; 
+        flex-direction: column;
         gap: 20px;
     }
 
     .casual-formal, .party-gym {
-        flex-direction: column; 
-        gap: 20px;
+        flex-direction: column;
+        gap: 20px; 
         align-items: center;
         width: 100%; 
     }
 
     .casual-formal div, .party-gym div {
-        width: 100%;
+        width: 100%; 
         max-width: 300px; 
     }
 
@@ -929,12 +946,12 @@ footer
 
     .testimonials h2 {
         font-size: 32px; 
-        margin-left: 0; 
+        margin-left: 0;
         text-align: center;
     }
 
     .testimonial-container {
-        flex-direction: column;
+        flex-direction: column; 
         gap: 20px;
         max-width: 100%; 
     }
@@ -943,7 +960,7 @@ footer
         width: 90%; 
         height: auto; 
         margin: 0 auto; 
-        padding: 20px; 
+        padding: 20px;
         text-align: center; 
     }
 
@@ -956,7 +973,7 @@ footer
     }
 
     .testimonial-nav button {
-        font-size: 18px;
+        font-size: 18px; 
         margin: 0; 
     }
 

@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./reset/reset.css">
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>Document</title>
+    <title>Shop.co</title>
 </head>
 <body>
     <div class="promo-container">
-        <p>Sign up and get 20% off to your first order.<span>Sign Up Now</span></p>
-        <img src="./assets/X.png" alt="off">    
+        <p>Sign up and get 20% off to your first order. <span>Sign Up Now</span></p>
+        <img src="./assets/X.svg" alt="off">    
     </div>
 
 
@@ -19,7 +19,7 @@
         <nav class="navbar">
             <div class="logo">SHOP.CO</div>
             <div class="nav-links">
-                <a href="#">Shop <img src="assets/dopdown.png" alt="dropdown"></a>
+                <a href="#">Shop <img src="assets/dropdown.svg" alt="dropdown"></a>
                 <a href="#">On Sale</a>
                 <a href="#">New Arrivals</a>
                 <a href="#">Brands</a>
@@ -29,8 +29,8 @@
                 <input type="text" id="searchInput" placeholder="Search for products...">
             </div>
             <div class="nav-icons">
-                <img src="assets/cart.png" alt="">
-                <img src="assets/user.png" alt="">
+                <img src="assets/cart.svg" alt="">
+                <img src="assets/user.svg" alt="">
             </div>
             <img class="burger-menu" src="assets/burger.png" alt="">
         </nav>
@@ -86,45 +86,65 @@
     </section>
 
 
-    <section class="dress-stylers">
-        <h2>BROWSE BY DRESS STYLE</h2>
-        <div class="dress-stylers-content" >
-            <div class="casual-formal">
-                <img src="./assets/casual.png" alt="">
-                <img src="./assets/formal.png" alt="">
-            </div>
-
-            <div class="party-gym">
-                <img src="./assets/party.png" alt="">
-                <img src="./assets/gym.png" alt="">
+    <section>
+        <div class="dress-stylers">
+            <strong>BROWSE BY DRESS STYLE</strong>
+            <div class="dress-stylers-content" >
+                <div class="casual-formal">
+                    <img src="./assets/casual.png" alt="">
+                    <img src="./assets/formal.png" alt="">
+                </div>
+    
+                <div class="party-gym">
+                    <img src="./assets/party.png" alt="">
+                    <img src="./assets/gym.png" alt="">
+                </div>
             </div>
         </div>
     </section>
 
 
     <section class="testimonials">
-        <h2>Our Happy Customers</h2>
+        <strong>Our Happy Customers</strong>
 
         <div class="testimonial-nav">
-            <img src="./assets/arrow-left-bold 2.png" alt="">
-            <img src="./assets/arrow-right-bold 1.png" alt="">
+            <img class="prev" src="./assets/left-arrow.svg" alt="left-arrow">
+            <img class="next" src="./assets/right-arrow.svg" alt="right-arrow">
         </div>
         <div class="testimonial-container">
             <div class="testimonial-card">
-                <div class="stars"><img src="./assets/stars.png" alt=""></div>
-                <h3>Sarah M. <img src="./assets/green button.png" alt=""></h3>
+                <div class="product-stars">
+                    <img src="assets/rating-star.svg" alt="star">
+                    <img src="assets/rating-star.svg" alt="star">
+                    <img src="assets/rating-star.svg" alt="star">
+                    <img src="assets/rating-star.svg" alt="star">
+                    <img src="assets/rating-star.svg" alt="star">
+                </div>
+                <h3>Sarah M. <img src="./assets/checkbox.svg" alt="checkmark"></h3>
                 <p>""I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
             </div>
             
             <div class="testimonial-card">
-                <div class="stars"><img src="./assets/stars.png" alt=""></div>
-                <h3>Alex K. <img src="./assets/green button.png" alt=""></h3>
+                <div class="product-stars">
+                    <img src="assets/rating-star.svg" alt="star">
+                    <img src="assets/rating-star.svg" alt="star">
+                    <img src="assets/rating-star.svg" alt="star">
+                    <img src="assets/rating-star.svg" alt="star">
+                    <img src="assets/rating-star.svg" alt="star">
+                </div>
+                <h3>Alex K. <img src="./assets/checkbox.svg" alt="checkmark"></h3>
                 <p>"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”</p>
             </div>
             
             <div class="testimonial-card">
-                <div class="stars"><img src="./assets/stars.png" alt=""></div>
-                <h3>James L. <img src="./assets/green button.png" alt=""></h3>
+                <div class="product-stars">
+                    <img src="assets/rating-star.svg" alt="star">
+                    <img src="assets/rating-star.svg" alt="star">
+                    <img src="assets/rating-star.svg" alt="star">
+                    <img src="assets/rating-star.svg" alt="star">
+                    <img src="assets/rating-star.svg" alt="star">
+                </div>
+                <h3>James L. <img src="./assets/checkbox.svg" alt="checkmark"></h3>
                 <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
             </div>
         </div>
@@ -133,11 +153,11 @@
 
 
     <section class="newsletter">
-        <h2>Stay Up To Date About Our Latest Offers</h2>
+        <strong>Stay Up To Date About Our Latest Offers</strong>
         <form class="newsletter-form">
             <div class="input-container">
                 <img class="mail-icon" src="./assets/notif.png" alt="Mail Icon">
-                <input type="email" placeholder="Your email address" required>
+                <input type="email" placeholder="Enter your email address" required>
             </div>
             <button type="submit">Subscribe to Newsletter</button>
         </form>
@@ -149,7 +169,18 @@
             <h3 class="logo">SHOP.CO</h3>
             <p class="description">We have clothes that suits your style and which you're proud to wear. From women to men.</p>
             <div class="social-icons">
-                <img src="assets/Social.png" alt="">
+                <div class="icon light">
+                    <img src="assets/twitter.svg" alt="twitter">
+                </div>
+                <div class="icon dark">
+                    <img src="assets/facebook.svg" alt="facebook">
+                </div>
+                <div class="icon light">
+                    <img src="assets/instagram.svg" alt="instagram">
+                </div>
+                <div class="icon light">
+                    <img src="assets/github.svg" alt="github">
+                </div>
             </div>
         </div>
         <div class="column">
