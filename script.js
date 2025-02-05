@@ -82,6 +82,10 @@ function updateTestimonials() {
     });
 }
 
+function toggleNav() {
+    const navLinks = document.getElementById('navLinks');
+    navLinks.classList.toggle('active');
+}
 
 prevButton.addEventListener("click", () => {
     currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;

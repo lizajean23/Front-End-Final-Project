@@ -13,12 +13,10 @@
         <img src="./assets/X.svg" alt="off">    
     </div>
 
-
     <header>
-        
         <nav class="navbar">
             <div class="logo">SHOP.CO</div>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
                 <a href="#">Shop <img src="assets/dropdown.svg" alt="dropdown"></a>
                 <a href="#">On Sale</a>
                 <a href="#">New Arrivals</a>
@@ -32,9 +30,10 @@
                 <img src="assets/cart.svg" alt="">
                 <img src="assets/user.svg" alt="">
             </div>
-            <img class="burger-menu" src="assets/burger.png" alt="">
+            <img class="burger-menu" src="assets/burger.png" alt="" onclick="toggleNav()">
         </nav>
     </header>
+
 
 
     <section class="page-1">
@@ -64,18 +63,11 @@
 
     
     <section class="shops">
-        <div class="versace">
-            <img  src="./assets/versace.png" alt="">
-        </div>
-        <div class="three-shops"> 
-            <img src="./assets/zara.png" alt="">
-            <img src="./assets/gucci.png" alt="">
-            <img src="./assets/prada.png" alt="">
-        </div>
-        <div class="calvin">
-            <img class="calvin" src="./assets/Calvin Klein.png" alt="">
-        </div>
-
+        <img  src="./assets/versace.png" alt="">
+        <img src="./assets/zara.png" alt="">
+        <img src="./assets/gucci.png" alt="">
+        <img src="./assets/prada.png" alt="">
+        <img class="calvin" src="./assets/Calvin Klein.png" alt="">
     </section>
 
     <section class="new-arrivals">
@@ -91,13 +83,21 @@
             <strong>BROWSE BY DRESS STYLE</strong>
             <div class="dress-stylers-content" >
                 <div class="casual-formal">
-                    <img src="./assets/casual.png" alt="">
-                    <img src="./assets/formal.png" alt="">
+                    <div class="card casual">
+                        <h3>Casual</h3>
+                    </div>
+                    <div class="card formal">
+                        <h3>Formal</h3>
+                    </div>
                 </div>
     
                 <div class="party-gym">
-                    <img src="./assets/party.png" alt="">
-                    <img src="./assets/gym.png" alt="">
+                    <div class="card party">
+                        <h3>Party</h3>
+                    </div>
+                    <div class="card gym">
+                        <h3>Gym</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -219,10 +219,6 @@
             </div>
         </div>
     </footer>
-    
-
-
-
     <script src="./script.js"></script>
 </body>
 </html>
